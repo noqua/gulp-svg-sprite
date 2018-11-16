@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/svg4everybody.min.js"></script>
+	<script>svg4everybody(); // run it now or whenever you are ready</script>
+	<link rel="stylesheet" type="text/css" href="css/sprite.css">
+	<style>
+	.icon {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+	}
+
+	.red {
+		fill: red;
+	}
+
+	.blue {
+		fill: blue;
+	}
+
+	.green {
+		fill: green;
+	}
+
+	.orange {
+		fill: orange;
+	}
+
+	.purple {
+		fill: purple;
+	}
+
+	</style>
+</head>
+<body>
+<section>
+	<h1>SVGタグ</h1>
+	<svg class="icon red" role="img">
+		<use xlink:href="images/sprite.svg#home" />
+	</svg>
+
+	<svg class="icon blue" role="img">
+		<use xlink:href="images/sprite.svg#book" />
+	</svg>
+
+	<svg class="icon green" role="img">
+		<use xlink:href="images/sprite.svg#bubbles" />
+	</svg>
+
+	<svg class="icon orange" role="img">
+		<use xlink:href="images/sprite.svg#camera" />
+	</svg>
+
+	<svg class="icon purple" role="img">
+		<use xlink:href="images/sprite.svg#cog" />
+	</svg>
+</section>
+
+<hr>
+
+<section>
+	<h1>背景</h1>
+
+	<span class="icon icon_heart" aria-hidden="true"></span>
+	<span class="icon icon_diamonds"></span>
+	<span class="icon icon_spades spades icon_spades" aria-hidden="true"></span>
+	<span class="icon icon_clubs clubs icon_clubs"></span>
+</section>
+</body>
+</html>
